@@ -18,8 +18,29 @@ const Chat = () => {
           <img src={assets.help} alt="Help Icon" />
         </div>
       </div>
+      <div className="chat-msg">
+        <div className="s-msg">
+          <p className='msg'>hello is me i alaways remember you</p>
+        </div>
+        <div>
+          <img src={assets.profile} alt="" height={30} width={30} />
+          <p>2.30 PM</p>
+        </div>
+
+      </div>
+       
       <div className="chat_message">
         <input type="text " placeholder='send a message' />
+        <input type="file "  id='img' accept='image/png , image/jpeg' hidden/>
+        <div className="img">
+        </div>
+        <label htmlFor="image">
+          
+          <img src={assets.image} alt="" height={30}  width={30}/>
+        </label>
+        <img src={assets.dm} alt=""  height={30}  width={30} className='dm'/>
+
+       
       </div>
     </div>
   );
